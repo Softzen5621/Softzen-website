@@ -9,7 +9,7 @@ import food from "../assets/food.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import "./lifeatsoftzen.css";
+import "./LifeAtSoftzen.css";
 
 function LifeAtSoftzen() {
   return (
