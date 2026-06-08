@@ -1,0 +1,482 @@
+.values{
+  padding:140px 4%;
+  background:#050816;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Background */
+
+.values::before{
+  content:"";
+  position:absolute;
+  width:900px;
+  height:900px;
+  left:-350px;
+  top:-350px;
+  background:#2563eb;
+  opacity:.08;
+  filter:blur(300px);
+}
+
+.values::after{
+  content:"";
+  position:absolute;
+  width:800px;
+  height:800px;
+  right:-300px;
+  bottom:-300px;
+  background:#06b6d4;
+  opacity:.06;
+  filter:blur(300px);
+}
+
+/* Header */
+
+.values-header{
+  text-align:center;
+  margin-bottom:80px;
+  position:relative;
+  z-index:5;
+}
+
+.values-header p{
+  color:#06b6d4;
+  letter-spacing:5px;
+  font-size:14px;
+  font-weight:700;
+  margin-bottom:18px;
+}
+
+.values-header h2{
+  color:white;
+  font-size:72px;
+  font-weight:900;
+  margin-bottom:18px;
+}
+
+.values-header h2 span{
+  background:linear-gradient(
+    90deg,
+    #3b82f6,
+    #ef4444,
+    #facc15,
+    #22c55e,
+    #3b82f6
+  );
+
+  background-size:300% auto;
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  animation:gradientFlow 8s linear infinite;
+}
+
+@keyframes gradientFlow{
+
+  100%{
+    background-position:300% center;
+  }
+
+}
+
+.values-line{
+  width:120px;
+  height:4px;
+  border-radius:999px;
+  margin:0 auto 25px;
+
+  background:linear-gradient(
+    90deg,
+    #3b82f6,
+    #ef4444,
+    #facc15,
+    #22c55e
+  );
+}
+
+.values-subtitle{
+  max-width:800px;
+  display:block;
+  margin:auto;
+
+  color:#94a3b8;
+  font-size:18px;
+  line-height:1.8;
+}
+
+/* Grid */
+
+.values-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:16px;
+
+  position:relative;
+  z-index:5;
+}
+
+/* Cards */
+
+.value-card{
+
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.05),
+    rgba(255,255,255,.02)
+  );
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:26px;
+
+  padding:30px 16px;
+
+  min-height:320px;
+
+  text-align:center;
+
+  position:relative;
+
+  overflow:hidden;
+
+  backdrop-filter:blur(20px);
+
+  transition:.4s;
+}
+
+.value-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  width:140px;
+  height:140px;
+
+  border-radius:50%;
+
+  top:-70px;
+  right:-70px;
+
+  background:rgba(255,255,255,.03);
+}
+
+.value-card::after{
+
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.08),
+    transparent
+  );
+
+  transform:translateX(-150%);
+
+  animation:shine 8s infinite;
+}
+
+@keyframes shine{
+
+  100%{
+    transform:translateX(150%);
+  }
+
+}
+
+/* Letter */
+
+.value-letter{
+
+  font-size:72px;
+  font-weight:900;
+
+  margin-bottom:20px;
+
+  transition:.4s;
+}
+
+.value-card:nth-child(1) .value-letter{
+  color:#3b82f6;
+}
+
+.value-card:nth-child(2) .value-letter{
+  color:#ef4444;
+}
+
+.value-card:nth-child(3) .value-letter{
+  color:#facc15;
+}
+
+.value-card:nth-child(4) .value-letter{
+  color:#22c55e;
+}
+
+.value-card:nth-child(5) .value-letter{
+  color:#3b82f6;
+}
+
+.value-card:nth-child(6) .value-letter{
+  color:#8b5cf6;
+}
+
+.value-card:nth-child(7) .value-letter{
+  color:#14b8a6;
+}
+
+/* Title */
+
+.value-card h3{
+
+  color:white;
+
+  font-size:20px;
+  font-weight:700;
+
+  margin-bottom:15px;
+
+  line-height:1.4;
+}
+
+/* Description */
+
+.value-card p{
+
+  color:#94a3b8;
+
+  font-size:14px;
+  line-height:1.8;
+}
+
+/* Hover */
+
+.value-card:hover{
+
+  transform:translateY(-10px);
+}
+
+.value-card:hover .value-letter{
+
+  transform:scale(1.15);
+}
+
+/* =====================================
+   SOFTZEN SEQUENTIAL GLOW
+===================================== */
+
+.value-card{
+  animation-duration:14s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease-in-out;
+}
+
+.value-card:nth-child(1){
+  animation-name:sGlow;
+}
+
+.value-card:nth-child(2){
+  animation-name:oGlow;
+}
+
+.value-card:nth-child(3){
+  animation-name:fGlow;
+}
+
+.value-card:nth-child(4){
+  animation-name:tGlow;
+}
+
+.value-card:nth-child(5){
+  animation-name:zGlow;
+}
+
+.value-card:nth-child(6){
+  animation-name:eGlow;
+}
+
+.value-card:nth-child(7){
+  animation-name:nGlow;
+}
+
+/* S */
+
+@keyframes sGlow{
+  0%,10%{
+    border-color:#3b82f6;
+    box-shadow:
+      0 0 40px rgba(59,130,246,.40),
+      0 0 90px rgba(59,130,246,.20);
+  }
+}
+
+/* O */
+
+@keyframes oGlow{
+  14%,24%{
+    border-color:#ef4444;
+    box-shadow:
+      0 0 40px rgba(239,68,68,.40),
+      0 0 90px rgba(239,68,68,.20);
+  }
+}
+
+/* F */
+
+@keyframes fGlow{
+  28%,38%{
+    border-color:#facc15;
+    box-shadow:
+      0 0 40px rgba(250,204,21,.40),
+      0 0 90px rgba(250,204,21,.20);
+  }
+}
+
+/* T */
+
+@keyframes tGlow{
+  42%,52%{
+    border-color:#22c55e;
+    box-shadow:
+      0 0 40px rgba(34,197,94,.40),
+      0 0 90px rgba(34,197,94,.20);
+  }
+}
+
+/* Z */
+
+@keyframes zGlow{
+  56%,66%{
+    border-color:#3b82f6;
+    box-shadow:
+      0 0 40px rgba(59,130,246,.40),
+      0 0 90px rgba(59,130,246,.20);
+  }
+}
+
+/* E */
+
+@keyframes eGlow{
+  70%,80%{
+    border-color:#8b5cf6;
+    box-shadow:
+      0 0 40px rgba(139,92,246,.40),
+      0 0 90px rgba(139,92,246,.20);
+  }
+}
+
+/* N */
+
+@keyframes nGlow{
+  84%,94%{
+    border-color:#14b8a6;
+    box-shadow:
+      0 0 40px rgba(20,184,166,.40),
+      0 0 90px rgba(20,184,166,.20);
+  }
+}
+
+/* Footer */
+
+.values-footer{
+
+  margin-top:70px;
+
+  display:flex;
+  justify-content:center;
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  position:relative;
+  z-index:5;
+}
+
+.value-footer-card{
+
+  min-width:160px;
+
+  background:rgba(255,255,255,.04);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:18px;
+
+  padding:20px 28px;
+
+  transition:.3s;
+}
+
+.value-footer-card:hover{
+
+  transform:translateY(-5px);
+
+  border-color:#3b82f6;
+}
+
+.value-footer-card h4{
+
+  color:white;
+
+  font-size:28px;
+  font-weight:800;
+}
+
+/* Large Screens */
+
+@media(max-width:1600px){
+
+  .values-grid{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+}
+
+/* Tablet */
+
+@media(max-width:1100px){
+
+  .values-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .values-header h2{
+    font-size:56px;
+  }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .values{
+    padding:110px 6%;
+  }
+
+  .values-grid{
+    grid-template-columns:1fr;
+  }
+
+  .values-header h2{
+    font-size:38px;
+  }
+
+  .values-subtitle{
+    font-size:16px;
+  }
+
+  .value-card{
+    min-height:auto;
+  }
+
+  .value-letter{
+    font-size:58px;
+  }
+
+}

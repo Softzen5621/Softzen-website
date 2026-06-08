@@ -1,0 +1,342 @@
+.office-overview{
+  background:#050816;
+  padding:140px 8%;
+  position:relative;
+  overflow:hidden;
+}
+
+.office-overview::before{
+  content:"";
+  position:absolute;
+  width:750px;
+  height:750px;
+  top:-300px;
+  right:-300px;
+  background:#2563eb;
+  filter:blur(320px);
+  opacity:.08;
+}
+
+.office-overview::after{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+  left:-250px;
+  bottom:-250px;
+  background:#06b6d4;
+  filter:blur(300px);
+  opacity:.05;
+}
+
+.office-container{
+  display:grid;
+  grid-template-columns:1fr 1.15fr;
+  gap:90px;
+  align-items:center;
+  position:relative;
+  z-index:2;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.office-content{
+  max-width:680px;
+}
+
+.office-tag{
+  color:#06b6d4;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:5px;
+  margin-bottom:22px;
+  text-transform:uppercase;
+}
+
+.office-content h2{
+  color:white;
+  font-size:74px;
+  line-height:1.05;
+  font-weight:900;
+  margin-bottom:28px;
+}
+
+.office-content h2 span{
+  background:linear-gradient(
+    135deg,
+    #60a5fa,
+    #06b6d4
+  );
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.office-description{
+  color:#94a3b8;
+  font-size:20px;
+  line-height:1.9;
+  margin-bottom:45px;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.office-features{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.office-feature-card{
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.05),
+    rgba(255,255,255,.02)
+  );
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:22px;
+
+  padding:20px 24px;
+
+  color:white;
+
+  font-size:16px;
+  font-weight:600;
+
+  backdrop-filter:blur(20px);
+
+  transition:.35s ease;
+}
+
+.office-feature-card:hover{
+  transform:translateY(-8px);
+
+  border-color:#2563eb;
+
+  box-shadow:
+  0 20px 50px rgba(37,99,235,.18);
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.office-right{
+  position:relative;
+}
+
+.office-image{
+  position:relative;
+
+  background:rgba(255,255,255,.03);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:34px;
+
+  padding:14px;
+
+  overflow:hidden;
+
+  backdrop-filter:blur(20px);
+
+  box-shadow:
+  0 30px 80px rgba(37,99,235,.12);
+}
+
+.office-image img{
+  width:100%;
+  height:auto;
+
+  display:block;
+
+  object-fit:contain;
+
+  border-radius:24px;
+
+  transition:.5s ease;
+}
+
+.office-image:hover img{
+  transform:scale(1.02);
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.office-badge{
+  position:absolute;
+
+  background:rgba(5,8,22,.92);
+
+  border:1px solid rgba(59,130,246,.35);
+
+  color:white;
+
+  padding:16px 24px;
+
+  border-radius:18px;
+
+  font-size:15px;
+  font-weight:700;
+
+  backdrop-filter:blur(20px);
+
+  box-shadow:
+  0 15px 40px rgba(37,99,235,.18);
+
+  z-index:10;
+}
+
+.badge-top{
+  top:25px;
+  left:25px;
+}
+
+.badge-bottom{
+  bottom:25px;
+  right:25px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.office-stats{
+  margin-top:28px;
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:20px;
+}
+
+.office-stat-card{
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.05),
+    rgba(255,255,255,.02)
+  );
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:24px;
+
+  padding:30px 24px;
+
+  text-align:center;
+
+  backdrop-filter:blur(20px);
+
+  transition:.35s ease;
+}
+
+.office-stat-card:hover{
+  transform:translateY(-8px);
+
+  border-color:#2563eb;
+
+  box-shadow:
+  0 20px 50px rgba(37,99,235,.18);
+}
+
+.office-stat-card h3{
+  color:#3b82f6;
+
+  font-size:46px;
+  font-weight:900;
+
+  margin-bottom:10px;
+}
+
+.office-stat-card span{
+  color:#94a3b8;
+
+  font-size:14px;
+  font-weight:500;
+}
+
+/* =========================
+   LARGE SCREENS
+========================= */
+
+@media(max-width:1400px){
+
+  .office-content h2{
+    font-size:64px;
+  }
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:1200px){
+
+  .office-container{
+    grid-template-columns:1fr;
+    gap:60px;
+  }
+
+  .office-content{
+    max-width:100%;
+  }
+
+  .office-content h2{
+    font-size:58px;
+  }
+
+  .badge-top,
+  .badge-bottom{
+    display:none;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .office-overview{
+    padding:110px 6%;
+  }
+
+  .office-content h2{
+    font-size:42px;
+  }
+
+  .office-description{
+    font-size:17px;
+  }
+
+  .office-features{
+    grid-template-columns:1fr;
+  }
+
+  .office-image{
+    padding:10px;
+  }
+
+  .office-image img{
+    width:100%;
+    height:auto;
+  }
+
+  .office-stats{
+    grid-template-columns:1fr;
+  }
+
+  .office-stat-card h3{
+    font-size:34px;
+  }
+
+}

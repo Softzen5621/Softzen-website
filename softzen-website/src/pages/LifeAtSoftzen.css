@@ -1,0 +1,489 @@
+/* =========================
+   PAGE
+========================= */
+
+.life-page{
+  background:
+  radial-gradient(circle at top left,#0f172a 0%,#020617 45%),
+  #020617;
+  min-height:100vh;
+  padding:140px 8%;
+  overflow:hidden;
+  position:relative;
+}
+
+.life-page::before{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+  background:rgba(37,99,235,.12);
+  filter:blur(120px);
+  border-radius:50%;
+  top:-250px;
+  left:-200px;
+}
+
+.life-page::after{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+  background:rgba(6,182,212,.08);
+  filter:blur(120px);
+  border-radius:50%;
+  bottom:-250px;
+  right:-250px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.life-hero{
+  position:relative;
+  z-index:2;
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+.life-tag{
+  display:inline-block;
+  padding:10px 20px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.04);
+  color:#60a5fa;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:2px;
+  margin-bottom:30px;
+}
+
+.life-hero h1{
+  color:#fff;
+  font-size:82px;
+  font-weight:900;
+  line-height:1.02;
+  margin-bottom:30px;
+}
+
+.life-desc{
+  max-width:850px;
+  margin:auto;
+  color:#94a3b8;
+  font-size:20px;
+  line-height:1.9;
+}
+
+.life-badges{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:45px;
+}
+
+.life-badges span{
+  padding:14px 22px;
+  border-radius:999px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  color:#e2e8f0;
+  font-weight:600;
+  backdrop-filter:blur(15px);
+}
+
+/* =========================
+   STATS
+========================= */
+
+.life-stats{
+  margin-top:90px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+  position:relative;
+  z-index:2;
+}
+
+
+ .stat-card{
+  background:#0b1220;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:28px;
+  padding:35px;
+  text-align:center;
+  backdrop-filter:blur(20px);
+  transition:.35s;
+}
+
+.stat-card:hover{
+  transform:translateY(-8px);
+  border-color:#2563eb;
+  box-shadow:0 20px 40px rgba(37,99,235,.15);
+}
+
+.stat-card h2{
+  color:#60a5fa;
+  font-size:48px;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+.stat-card span{
+  color:#cbd5e1;
+}
+
+/* =========================
+   IMAGE SECTIONS
+========================= */
+
+.culture-section{
+  margin-top:140px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+  position:relative;
+  z-index:2;
+}
+
+.culture-section.reverse{
+  direction:rtl;
+}
+
+.culture-section.reverse > *{
+  direction:ltr;
+}
+
+.section-label{
+  color:#06b6d4;
+  letter-spacing:4px;
+  font-size:13px;
+  font-weight:700;
+}
+
+.culture-left h2{
+  color:white;
+  font-size:52px;
+  line-height:1.1;
+  margin:18px 0 24px;
+}
+
+.culture-left p{
+  color:#94a3b8;
+  font-size:18px;
+  line-height:1.9;
+}
+
+.culture-right{
+  position:relative;
+}
+
+.culture-right::before{
+  content:"";
+  position:absolute;
+  inset:-15px;
+  background:linear-gradient(
+    135deg,
+    rgba(37,99,235,.18),
+    rgba(6,182,212,.12)
+  );
+  border-radius:40px;
+  filter:blur(25px);
+  opacity:.8;
+}
+
+.culture-right img{
+  position:relative;
+  z-index:2;
+
+  width:100%;
+  height:auto;
+
+  display:block;
+
+  border-radius:32px;
+
+  background:#0f172a;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.35);
+
+  transition:.4s;
+}
+
+.culture-right img:hover{
+  transform:translateY(-8px);
+  box-shadow:
+  0 30px 80px rgba(37,99,235,.18);
+}
+/* =========================
+   BENEFITS BANNER
+========================= */
+
+.benefits-banner{
+  margin-top:120px;
+  position:relative;
+  z-index:2;
+}
+
+.benefits-banner img{
+  width:100%;
+  height:650px;
+  object-fit:cover;
+  border-radius:36px;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+/* =========================
+   GROWTH GRID
+========================= */
+
+.growth-grid{
+  margin-top:100px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.growth-card{
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.04),
+    rgba(255,255,255,.02)
+  );  border:1px solid rgba(255,255,255,.08);
+  border-radius:28px;
+  padding:35px;
+  text-align:center;
+}
+
+.growth-card h3{
+  color:white;
+  font-size:42px;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+.growth-card span{
+  color:#94a3b8;
+}
+
+/* =========================
+   WELCOME KIT
+========================= */
+
+.welcome-kit{
+  margin-top:130px;
+  text-align:center;
+}
+
+.welcome-kit h2{
+  color:white;
+  font-size:56px;
+  margin-bottom:40px;
+}
+
+.welcome-kit img{
+  width:100%;
+  height:650px;
+  object-fit:cover;
+  border-radius:34px;
+}
+
+/* =========================
+   BENEFITS GRID
+========================= */
+
+.benefits-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:40px;
+}
+
+.benefit-card{
+  background:linear-gradient(
+    135deg,
+    rgba(255,255,255,.05),
+    rgba(255,255,255,.02)
+  );
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:24px;
+  padding:28px;
+  color:white;
+  font-size:18px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.benefit-card:hover{
+  transform:translateY(-8px);
+  border-color:#2563eb;
+}
+
+/* =========================
+   GENERIC SECTIONS
+========================= */
+
+.life-section{
+  margin-top:120px;
+  text-align:center;
+}
+
+.life-section h2{
+  color:white;
+  font-size:54px;
+  line-height:1.15;
+  margin-bottom:20px;
+}
+
+.life-section p{
+  max-width:900px;
+  margin:auto;
+  color:#94a3b8;
+  line-height:1.9;
+  font-size:18px;
+}
+
+/* =========================
+   WELLNESS HIGHLIGHT
+========================= */
+
+.life-highlight{
+  margin-top:120px;
+  background:linear-gradient(
+    135deg,
+    rgba(37,99,235,.12),
+    rgba(6,182,212,.08)
+  );
+  border:1px solid rgba(59,130,246,.15);
+  border-radius:40px;
+  padding:90px;
+  text-align:center;
+}
+
+.highlight-content h2{
+  color:white;
+  font-size:60px;
+  line-height:1.05;
+}
+
+.highlight-content p{
+  max-width:850px;
+  margin:30px auto 0;
+  color:#cbd5e1;
+  line-height:1.9;
+  font-size:18px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.life-cta{
+  margin-top:140px;
+  text-align:center;
+}
+
+.life-cta h2{
+  color:white;
+  font-size:62px;
+  line-height:1.1;
+  margin-bottom:25px;
+}
+
+.life-cta p{
+  max-width:850px;
+  margin:auto;
+  color:#94a3b8;
+  font-size:18px;
+  line-height:1.9;
+}
+
+.life-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:40px;
+  padding:18px 42px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  color:white;
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+  box-shadow:
+  0 20px 40px rgba(37,99,235,.25);
+  transition:.3s;
+}
+
+.life-btn:hover{
+  transform:translateY(-4px);
+  box-shadow:
+  0 30px 60px rgba(37,99,235,.35);
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+  .culture-section{
+    grid-template-columns:1fr;
+  }
+
+  .life-stats,
+  .growth-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .benefits-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .life-hero h1{
+    font-size:56px;
+  }
+}
+
+@media(max-width:768px){
+
+  .life-page{
+    padding:120px 6%;
+  }
+
+  .life-hero h1,
+  .life-cta h2,
+  .life-section h2,
+  .culture-left h2{
+    font-size:38px;
+  }
+
+  .life-stats,
+  .growth-grid,
+  .benefits-grid{
+    grid-template-columns:1fr;
+  }
+
+  .culture-right img,
+  .benefits-banner img,
+  .welcome-kit img{
+    height:auto;
+  }
+
+  .life-highlight{
+    padding:50px 25px;
+  }
+
+  .highlight-content h2{
+    font-size:40px;
+  }
+}

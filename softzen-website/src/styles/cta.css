@@ -1,0 +1,340 @@
+.cta-section{
+  padding:160px 8%;
+  background:
+  radial-gradient(circle at top left,
+  rgba(37,99,235,.12),
+  transparent 45%),
+  radial-gradient(circle at bottom right,
+  rgba(6,182,212,.08),
+  transparent 45%),
+  #020617;
+  position:relative;
+  overflow:hidden;
+}
+
+/* =========================
+   SUCCESS MODAL
+========================= */
+
+.success-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  backdrop-filter:blur(12px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:99999;
+}
+
+.success-modal{
+  width:550px;
+  max-width:92%;
+  padding:50px;
+  text-align:center;
+
+  background:linear-gradient(
+    180deg,
+    #071226,
+    #0b1220
+  );
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:30px;
+
+  box-shadow:
+  0 30px 80px rgba(0,0,0,.45);
+}
+
+.success-icon{
+  width:90px;
+  height:90px;
+
+  margin:auto;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:white;
+  font-size:36px;
+  font-weight:800;
+
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+}
+
+.success-modal h3{
+  color:white;
+  font-size:34px;
+  margin-top:25px;
+  margin-bottom:15px;
+}
+
+.success-modal p{
+  color:#94a3b8;
+  line-height:1.8;
+  font-size:17px;
+}
+
+.success-modal button{
+  margin-top:30px;
+
+  border:none;
+  cursor:pointer;
+
+  color:white;
+  font-weight:700;
+
+  padding:16px 34px;
+
+  border-radius:999px;
+
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+  transition:.3s;
+}
+
+.success-modal button:hover{
+  transform:translateY(-3px);
+}
+
+.cta-content{
+  max-width:1500px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:90px;
+  align-items:center;
+
+  position:relative;
+  z-index:2;
+}
+
+.cta-left{
+  max-width:650px;
+}
+
+.cta-tag{
+  display:inline-flex;
+  align-items:center;
+
+  padding:12px 20px;
+
+  border-radius:999px;
+
+  background:rgba(255,255,255,.04);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  color:#60a5fa;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+
+  margin-bottom:28px;
+}
+
+.cta-left h2{
+  color:white;
+
+  font-size:72px;
+
+  font-weight:900;
+
+  line-height:1.03;
+
+  letter-spacing:-2px;
+
+  margin-bottom:28px;
+}
+
+.cta-desc{
+  color:#94a3b8;
+
+  font-size:20px;
+
+  line-height:1.9;
+
+  margin-bottom:35px;
+}
+
+.cta-info{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.cta-info div{
+  color:#e2e8f0;
+
+  font-size:17px;
+
+  font-weight:500;
+}
+
+.cta-form{
+  background:
+  linear-gradient(
+    180deg,
+    rgba(255,255,255,.05),
+    rgba(255,255,255,.02)
+  );
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:32px;
+
+  padding:42px;
+
+  backdrop-filter:blur(24px);
+
+  box-shadow:
+  0 25px 80px rgba(0,0,0,.35);
+
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.cta-form input,
+.cta-form select,
+.cta-form textarea{
+  width:100%;
+
+  background:#0b1220;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:16px;
+
+  padding:18px;
+
+  color:white;
+
+  font-size:15px;
+
+  transition:.25s;
+
+  outline:none;
+}
+
+.cta-form input::placeholder,
+.cta-form textarea::placeholder{
+  color:#64748b;
+}
+
+.cta-form input:focus,
+.cta-form select:focus,
+.cta-form textarea:focus{
+  border-color:#3b82f6;
+
+  box-shadow:
+  0 0 0 4px rgba(59,130,246,.12);
+}
+
+.cta-form textarea{
+  resize:none;
+  min-height:140px;
+}
+
+.cta-form select{
+  cursor:pointer;
+}
+
+.cta-form option{
+  background:#0b1220;
+  color:white;
+}
+
+.cta-form button{
+  margin-top:10px;
+
+  height:60px;
+
+  border:none;
+
+  border-radius:16px;
+
+  cursor:pointer;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  color:white;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+  box-shadow:
+  0 20px 40px rgba(37,99,235,.25);
+
+  transition:.3s;
+}
+
+.cta-form button:hover{
+  transform:translateY(-3px);
+
+  box-shadow:
+  0 30px 60px rgba(37,99,235,.35);
+}
+
+.cta-form button:disabled{
+  opacity:.7;
+  cursor:not-allowed;
+  transform:none;
+}
+
+@media(max-width:1200px){
+
+  .cta-content{
+    grid-template-columns:1fr;
+    gap:60px;
+  }
+
+  .cta-left{
+    max-width:100%;
+  }
+
+  .cta-left h2{
+    font-size:56px;
+  }
+}
+
+@media(max-width:768px){
+
+  .cta-section{
+    padding:120px 6%;
+  }
+
+  .cta-left h2{
+    font-size:40px;
+  }
+
+  .cta-desc{
+    font-size:17px;
+  }
+
+  .cta-form{
+    padding:25px;
+  }
+}

@@ -1,0 +1,38 @@
+.why-section{
+  padding:120px 8%;
+  background:#050816;
+  text-align:center;
+}
+
+.why-tag{
+  color:#06b6d4;
+  letter-spacing:3px;
+}
+
+.why-section h2{
+  color:white;
+  font-size:60px;
+  margin:20px 0 60px;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.why-card{
+  background:#0b1220;
+  border-radius:24px;
+  padding:40px;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.why-card h3{
+  color:white;
+  margin-bottom:15px;
+}
+
+.why-card p{
+  color:#94a3b8;
+}

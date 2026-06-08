@@ -1,0 +1,134 @@
+.atlas-section{
+  padding:120px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:80px;
+  background:#050816;
+}
+
+.atlas-left{
+  flex:1;
+}
+
+
+.atlas-tag{
+  color:#06b6d4;
+  letter-spacing:3px;
+  margin-bottom:15px;
+}
+
+.dashboard-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:30px;
+}
+
+#circle1,
+#circle2,
+#circle3{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  display:block;
+}
+
+#circle1{
+  background:#ff5f57; /* Close */
+  box-shadow:0 0 10px rgba(255,95,87,.4);
+}
+
+#circle2{
+  background:#febc2e; /* Minimize */
+  box-shadow:0 0 10px rgba(254,188,46,.4);
+}
+
+#circle3{
+  background:#28c840; /* Maximize */
+  box-shadow:0 0 10px rgba(40,200,64,.4);
+}
+
+#circle1:hover,
+#circle2:hover,
+#circle3:hover{
+  transform:scale(1.15);
+  transition:.25s;
+}
+
+.atlas-left h2{
+  color:white;
+  font-size:58px;
+  line-height:1.1;
+  margin-bottom:25px;
+}
+
+.atlas-desc{
+  color:#94a3b8;
+  line-height:1.8;
+  font-size:18px;
+  max-width:650px;
+}
+
+.atlas-features{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+  margin-top:40px;
+}
+
+.atlas-features div{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:14px;
+  border-radius:12px;
+  text-align:center;
+  color:white;
+}
+
+.atlas-right{
+  flex:1;
+}
+
+.dashboard{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:30px;
+  padding:30px;
+  backdrop-filter:blur(20px);
+}
+
+.dashboard-header{
+  display:flex;
+  gap:10px;
+  margin-bottom:30px;
+}
+
+.dashboard-header span{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:white;
+}
+
+.dashboard-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.metric-card{
+  background:#081225;
+  border-radius:20px;
+  padding:30px;
+  text-align:center;
+}
+
+.metric-card h3{
+  color:#3b82f6;
+  font-size:40px;
+}
+
+.metric-card p{
+  color:#94a3b8;
+}

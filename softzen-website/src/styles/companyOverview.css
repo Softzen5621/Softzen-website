@@ -1,0 +1,56 @@
+.company-overview{
+  background:#070b1b;
+  padding:140px 8%;
+}
+
+.overview-header{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+}
+
+.overview-header p{
+  color:#06b6d4;
+  letter-spacing:4px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.overview-header h2{
+  color:white;
+  font-size:64px;
+  line-height:1.1;
+  margin-bottom:25px;
+}
+
+.overview-header span{
+  color:#94a3b8;
+  font-size:19px;
+  line-height:1.9;
+}
+
+.overview-stats{
+  margin-top:80px;
+
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.stat-card{
+  background:#0b1220;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:24px;
+  padding:35px;
+  text-align:center;
+}
+
+.stat-card h3{
+  color:#3b82f6;
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+.stat-card p{
+  color:#94a3b8;
+}

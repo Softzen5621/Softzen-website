@@ -1,0 +1,156 @@
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  height:90px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 7%;
+
+  background:rgba(5,8,22,.75);
+
+  backdrop-filter:blur(20px);
+
+  border-bottom:1px solid rgba(255,255,255,.08);
+
+  transition:.3s;
+}
+
+/* Logo */
+
+.logo-section{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.logo-section img{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+
+  filter:
+  drop-shadow(0 0 10px rgba(59,130,246,.25));
+}
+
+.logo-section h2{
+  color:white;
+  margin:0;
+  font-size:20px;
+  font-weight:700;
+}
+
+.logo-section span{
+  color:#7dd3fc;
+  font-size:12px;
+  letter-spacing:1px;
+}
+
+/* Navigation */
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:38px;
+  list-style:none;
+}
+
+.nav-links li{
+  font-size:15px;
+  font-weight:500;
+  cursor:pointer;
+  position:relative;
+}
+
+/* FIXED LINK STYLE */
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.nav-links a:visited{
+  color:white;
+}
+
+.nav-links a:hover{
+  color:#60a5fa;
+}
+
+.nav-links li::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-8px;
+
+  width:0;
+  height:2px;
+
+  background:#2563eb;
+
+  transition:.3s;
+}
+
+.nav-links li:hover::after{
+  width:100%;
+}
+
+/* Button */
+
+.demo-btn{
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+  color:white;
+
+  border:none;
+
+  padding:13px 28px;
+
+  border-radius:999px;
+
+  cursor:pointer;
+
+  font-weight:600;
+
+  transition:.3s;
+
+  box-shadow:
+  0 0 25px rgba(37,99,235,.35);
+}
+
+.demo-btn:hover{
+  transform:translateY(-3px);
+}
+
+/* Remove default anchor style around button */
+
+a{
+  text-decoration:none;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .demo-btn{
+    display:none;
+  }
+
+  .navbar{
+    padding:0 5%;
+  }
+}

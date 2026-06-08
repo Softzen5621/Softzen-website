@@ -1,0 +1,97 @@
+.quantum-section{
+  padding:120px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:80px;
+  background:#050816;
+}
+
+.quantum-left{
+  flex:1;
+}
+
+.quantum-tag{
+  color:#06b6d4;
+  letter-spacing:3px;
+}
+
+.quantum-left h2{
+  color:white;
+  font-size:60px;
+  margin:20px 0;
+}
+
+.quantum-left p{
+  color:#94a3b8;
+  line-height:1.8;
+  font-size:18px;
+}
+
+.quantum-features{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:30px;
+}
+
+.quantum-features span{
+  background:rgba(255,255,255,.05);
+  color:white;
+  padding:12px 18px;
+  border-radius:30px;
+}
+
+.quantum-right{
+  flex:1;
+}
+
+.ai-panel{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:30px;
+  padding:50px;
+  text-align:center;
+}
+
+.ai-circle{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  margin:auto;
+  background:radial-gradient(circle,#2563eb,#06b6d4);
+  box-shadow:0 0 60px rgba(37,99,235,.5);
+}
+
+.ai-panel h3{
+  color:white;
+  margin:30px 0;
+}
+
+.progress{
+  height:10px;
+  background:#111827;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.progress-fill{
+  width:97%;
+  height:100%;
+  background:#2563eb;
+}
+
+.ai-stats{
+  display:flex;
+  justify-content:space-around;
+  margin-top:40px;
+}
+
+.ai-stats h4{
+  color:#3b82f6;
+  font-size:32px;
+}
+
+.ai-stats p{
+  color:#94a3b8;
+}
