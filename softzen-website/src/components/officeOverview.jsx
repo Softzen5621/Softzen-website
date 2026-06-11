@@ -22,6 +22,7 @@ function OfficeOverview() {
 
           <h2>
             Built For
+            
             <br />
             <span>Global Innovation</span>
           </h2>

@@ -46,7 +46,7 @@ const locations = [
     top: "81%",
     left: "83%"
   }
-];
+];  
 
   return (
     <section className="global-section">
