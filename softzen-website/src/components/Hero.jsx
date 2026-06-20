@@ -68,11 +68,13 @@ function Hero() {
           SOFTZEN ONE™ ECOSYSTEM
         </p>
 
-        <h1>
-          One Platform.
-          <br />
-          <span>Powering Modern Organizations.</span>
-        </h1>
+       <h1>
+  One Platform.
+  <br />
+  <span>Powering Modern</span>
+  <br />
+  <span>Organizations.</span>
+</h1>
 
         <p className="description">
           Softzen unifies ERP, AI, CRM, HRMS,
@@ -135,24 +137,21 @@ function Hero() {
 
         <div className="ecosystem-panel">
 
-          <div className="featured-badge">
-            ENTERPRISE SUITE
-          </div>
+  <div className="featured-badge">
+    ENTERPRISE SUITE
+  </div>
 
-          <div className="ecosystem-header">
+  <div className="ecosystem-header">
+    <h3>SOFTZEN ONE™</h3>
 
-            <h3>
-              SOFTZEN ONE™
-            </h3>
+    <p>
+      ERP • AI • CRM • HRMS • Analytics • Security
+    </p>
+  </div>
 
-            <p>
-              ERP • AI • CRM • HRMS • Analytics • Security
-            </p>
 
-          </div>
 
-         
-
+    
           {/* <div className="one-description">
             The Enterprise Operating System connecting
             all Softzen platforms through one unified
@@ -220,21 +219,6 @@ function Hero() {
 
       </div>
 
-      <div className="hero-trust">
-
-        <span>10 Enterprise Products</span>
-
-        <span>Cloud Native</span>
-
-        <span>AI Powered</span>
-
-        <span>Enterprise Security</span>
-
-        <span>99.99% Uptime</span>
-
-        <span>Multi-Tenant SaaS</span>
-
-      </div>
 
     </section>
   );

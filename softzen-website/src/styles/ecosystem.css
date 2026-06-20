@@ -1,6 +1,6 @@
 .ecosystem{
-  background:#050816;
-  padding:140px 8%;
+    background:#050816;
+  padding:100px 8% 140px;
   position:relative;
   overflow:hidden;
 }
@@ -33,7 +33,7 @@
   text-align:center;
   margin-bottom:90px;
   position:relative;
-  z-index:2;
+  z-index:20;
 }
 
 .section-header p{

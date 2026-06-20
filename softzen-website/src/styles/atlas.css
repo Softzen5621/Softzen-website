@@ -1,26 +1,91 @@
+/* =========================
+   ATLAS SECTION
+========================= */
+
 .atlas-section{
   padding:120px 8%;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:80px;
+  gap:clamp(40px,6vw,90px);
   background:#050816;
+  overflow:hidden;
 }
 
 .atlas-left{
   flex:1;
+  min-width:0;
 }
 
-.dashboard-header span{
-  width:14px;
-  height:14px;
-  border-radius:50%;
+.atlas-right{
+  flex:1;
+  min-width:0;
 }
 
 .atlas-tag{
   color:#06b6d4;
   letter-spacing:3px;
   margin-bottom:15px;
+  font-size:14px;
+  font-weight:600;
+}
+
+.atlas-left h2{
+  color:white;
+  font-size:clamp(38px,5vw,64px);
+  line-height:1.05;
+  margin-bottom:25px;
+  max-width:700px;
+}
+
+.atlas-desc{
+  color:#94a3b8;
+  line-height:1.8;
+  font-size:clamp(15px,2vw,18px);
+  max-width:650px;
+}
+
+/* =========================
+   FEATURES GRID
+========================= */
+
+.atlas-features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  gap:15px;
+  margin-top:40px;
+}
+
+.atlas-features div{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:14px;
+  border-radius:12px;
+  text-align:center;
+  color:white;
+  transition:.3s;
+}
+
+.atlas-features div:hover{
+  transform:translateY(-4px);
+  border-color:#2563eb;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard{
+  width:100%;
+  max-width:650px;
+  margin-left:auto;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:30px;
+  padding:30px;
+  backdrop-filter:blur(20px);
+  overflow:hidden;
+  box-sizing:border-box;
 }
 
 .dashboard-header{
@@ -40,18 +105,15 @@
 }
 
 #circle1{
-  background:#ff5f57; /* Close */
-  box-shadow:0 0 10px rgba(255,95,87,.4);
+  background:#ff5f57;
 }
 
 #circle2{
-  background:#febc2e; /* Minimize */
-  box-shadow:0 0 10px rgba(254,188,46,.4);
+  background:#febc2e;
 }
 
 #circle3{
-  background:#28c840; /* Maximize */
-  box-shadow:0 0 10px rgba(40,200,64,.4);
+  background:#28c840;
 }
 
 #circle1:hover,
@@ -60,120 +122,84 @@
   transform:scale(1.15);
   transition:.25s;
 }
-.atlas-left h2{
-  color:white;
-  font-size:64px;
-  line-height:1.05;
-  margin-bottom:25px;
-  max-width:700px;
-}
-.atlas-desc{
-  color:#94a3b8;
-  line-height:1.8;
-  font-size:18px;
-  max-width:650px;
-}
 
-.atlas-features{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-  margin-top:40px;
-}
-
-.atlas-features div{
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.08);
-  padding:14px;
-  border-radius:12px;
-  text-align:center;
-  color:white;
-}
-
-.atlas-right{
-  flex:1;
-}
-
-.dashboard{
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:30px;
-  padding:30px;
-  backdrop-filter:blur(20px);
-}
-
-.dashboard-header{
-  display:flex;
-  gap:10px;
-  margin-bottom:30px;
-}
-
-
+/* =========================
+   METRICS GRID
+========================= */
 
 .dashboard-grid{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  width:100%;
 }
 
 .metric-card{
+  width:100%;
+  min-width:0;
   background:#081225;
   border-radius:20px;
-  padding:30px;
+  padding:24px;
   text-align:center;
+  box-sizing:border-box;
 }
 
 .metric-card h3{
   color:#3b82f6;
-  font-size:40px;
+  font-size:clamp(24px,4vw,40px);
+  line-height:1;
+  margin-bottom:10px;
+  word-break:break-word;
 }
 
 .metric-card p{
   color:#94a3b8;
+  font-size:15px;
 }
 
 /* =========================
-   MOBILE RESPONSIVE
+   TABLET
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width:992px){
 
   .atlas-section{
     flex-direction:column;
-    gap:50px;
-    padding:90px 6%;
     align-items:flex-start;
+    padding:100px 6%;
   }
 
   .atlas-left,
   .atlas-right{
     width:100%;
-    flex:none;
+  }
+
+  .dashboard{
+    max-width:100%;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .atlas-section{
+    padding:80px 5%;
+    gap:40px;
   }
 
   .atlas-left h2{
     font-size:48px;
-    line-height:1.1;
   }
 
   .atlas-desc{
     font-size:16px;
-    line-height:1.8;
-  }
-
-  .atlas-features{
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
-  }
-
-  .atlas-features div{
-    padding:14px 10px;
-    font-size:14px;
   }
 
   .dashboard{
-    width:100%;
-    padding:24px;
+    padding:22px;
     border-radius:24px;
   }
 
@@ -182,15 +208,75 @@
   }
 
   .metric-card{
-    padding:22px 12px;
+    padding:18px;
   }
 
   .metric-card h3{
-    font-size:34px;
+    font-size:32px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width:480px){
+
+  .atlas-section{
+    padding:70px 5%;
+  }
+
+  .atlas-left h2{
+    font-size:36px;
+  }
+
+  .atlas-features{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+
+  .atlas-features div{
+    padding:12px 8px;
+    font-size:13px;
+  }
+
+  .dashboard{
+    padding:18px;
+  }
+
+  .dashboard-grid{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  .metric-card{
+    padding:18px 14px;
+  }
+
+  .metric-card h3{
+    font-size:30px;
   }
 
   .metric-card p{
     font-size:13px;
   }
+}
 
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width:360px){
+
+  .atlas-left h2{
+    font-size:32px;
+  }
+
+  .atlas-features{
+    grid-template-columns:1fr;
+  }
+
+  .metric-card h3{
+    font-size:26px;
+  }
 }
