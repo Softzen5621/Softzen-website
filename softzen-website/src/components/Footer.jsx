@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/footer.css";
 
 function Footer() {
@@ -106,29 +107,28 @@ function Footer() {
 
       <div className="footer-bottom">
 
-        <p>
-          © 2026 Softzen Technology.
-          All Rights Reserved.
-        </p>
+  <p>
+    © 2026 Softzen Technology.
+    All Rights Reserved.
+  </p>
 
-        <div className="footer-bottom-links">
+  <div className="footer-bottom-links">
 
-          <a href="#">
-            Privacy Policy
-          </a>
+    <Link to="/privacy-policy">
+      Privacy Policy
+    </Link>
 
-          <a href="#">
-            Terms Of Service
-          </a>
+    <Link to="/terms-of-service">
+      Terms Of Service
+    </Link>
 
-          <a href="#">
-            Security
-          </a>
+    <Link to="/security">
+      Security
+    </Link>
 
-        </div>
+  </div>
 
-      </div>
-
+</div>
     </footer>
   );
 }
