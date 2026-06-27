@@ -189,6 +189,56 @@
   color:#60a5fa;
 }
 
+.footer-social{
+  margin-top:28px;
+}
+
+.footer-social p{
+  color:#94a3b8;
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:14px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.footer-social-icons{
+  display:flex;
+  gap:14px;
+}
+
+.footer-social-icons a{
+  width:46px;
+  height:46px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:14px;
+
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+
+  color:#cbd5e1;
+
+  text-decoration:none;
+
+  transition:.3s;
+}
+
+.footer-social-icons a svg{
+  font-size:20px;
+}
+
+.footer-social-icons a:hover{
+  color:#fff;
+  border-color:#2563eb;
+  background:rgba(37,99,235,.15);
+  transform:translateY(-4px);
+  box-shadow:0 12px 30px rgba(37,99,235,.25);
+}
+
 /* TABLET */
 
 @media(max-width:1200px){

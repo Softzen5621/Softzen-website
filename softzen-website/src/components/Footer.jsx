@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
-
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="footer">
@@ -27,8 +27,34 @@ function Footer() {
           <div className="footer-email">
             ✉ Enquiry@softzentechnology.com
           </div></a>
+          <div className="footer-social">
+
+  <div className="footer-social-icons">
+
+    <a
+      href="https://www.linkedin.com/company/softzen-technology"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+    >
+      <FaLinkedinIn />
+    </a>
+
+    <a
+      href="https://www.instagram.com/softzentechnology"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+    >
+      <FaInstagram />
+    </a>
+
+  </div>
+
+</div>
 
         </div>
+        
 
         {/* PRODUCTS */}
 
