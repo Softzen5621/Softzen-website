@@ -297,7 +297,7 @@ const matchesSearch =
               </div>
 
               <a
-                href={`mailto:Enquiry@softzentechnology.com?subject=Application - ${job.title}`}
+                href={`mailto:Career@softzentechnology.com?subject=Application - ${job.title}`}
                 className="apply-btn"
               >
                 Apply Now
@@ -337,10 +337,10 @@ const matchesSearch =
           </p>
 
           <a
-            href="mailto:Enquiry@softzentechnology.com"
+            href="mailto:Careers@softzentechnology.com"
             className="career-cta-btn"
           >
-            Enquiry@softzentechnology.com
+            Careers@softzentechnology.com
           </a>
 
         </div>

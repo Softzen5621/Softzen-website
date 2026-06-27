@@ -1,21 +1,18 @@
 import { Routes, Route } from "react-router-dom";
+
 import LifeAtSoftzen from "./pages/LifeAtSoftzen";
+import Careers from "./pages/Careers";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-
 import ProductEcosystem from "./components/ProductEcosystem";
 import AtlasShowcase from "./components/AtlasShowcase";
-
 import OfficeOverview from "./components/officeOverview";
 import Values from "./components/Values";
-
 import GlobalPresence from "./components/GlobalPresence";
 import Industries from "./components/Industries";
-
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
-
-import Careers from "./pages/Careers";
 
 import "./styles/stats.css";
 
@@ -48,7 +45,6 @@ function HomePage() {
 function App() {
   return (
     <Routes>
-
       <Route
         path="/"
         element={<HomePage />}
@@ -58,11 +54,11 @@ function App() {
         path="/careers"
         element={<Careers />}
       />
-      <Route
-  path="/life-at-softzen"
-  element={<LifeAtSoftzen />}
-/>
 
+      <Route
+        path="/life-at-softzen"
+        element={<LifeAtSoftzen />}
+      />
     </Routes>
   );
 }

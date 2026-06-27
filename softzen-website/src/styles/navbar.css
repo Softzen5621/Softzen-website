@@ -1,3 +1,7 @@
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar{
   position:sticky;
   top:0;
@@ -16,17 +20,18 @@
   backdrop-filter:blur(20px);
 
   border-bottom:1px solid rgba(255,255,255,.08);
-
-  transition:.3s;
 }
 
-/* Logo */
+/* =========================
+   LOGO
+========================= */
 
 .logo-section{
   display:flex;
   align-items:center;
   gap:14px;
 }
+
 .logo-section img{
   width:52px;
   height:52px;
@@ -49,7 +54,9 @@
   letter-spacing:1px;
 }
 
-/* Navigation */
+/* =========================
+   NAVIGATION
+========================= */
 
 .nav-links{
   display:flex;
@@ -59,22 +66,15 @@
 }
 
 .nav-links li{
+  position:relative;
   font-size:15px;
   font-weight:500;
-  cursor:pointer;
-  position:relative;
 }
-
-/* FIXED LINK STYLE */
 
 .nav-links a{
   color:white;
   text-decoration:none;
   transition:.3s;
-}
-
-.nav-links a:visited{
-  color:white;
 }
 
 .nav-links a:hover{
@@ -83,7 +83,6 @@
 
 .nav-links li::after{
   content:"";
-
   position:absolute;
 
   left:0;
@@ -101,7 +100,30 @@
   width:100%;
 }
 
-/* Button */
+/* =========================
+   TALK TO SALES
+========================= */
+
+.nav-sales-btn{
+  background:none;
+  border:none;
+
+  color:white;
+
+  font:inherit;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.nav-sales-btn:hover{
+  color:#60a5fa;
+}
+
+/* =========================
+   DEMO BUTTON
+========================= */
 
 .demo-btn{
   background:linear-gradient(
@@ -132,31 +154,166 @@
   transform:translateY(-3px);
 }
 
-/* Remove default anchor style around button */
+/* =========================
+   SALES MODAL
+========================= */
 
-a{
-  text-decoration:none;
+.sales-modal-overlay{
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,.82);
+
+  backdrop-filter:blur(8px);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+
+  z-index:99999;
 }
 
-/* Mobile */
+.sales-modal{
+  position:relative;
 
-@media(max-width:992px){
+  width:100%;
+  max-width:560px;
 
-  .nav-links{
-    display:none;
-  }
+  background:linear-gradient(
+    180deg,
+    #071225,
+    #08172b
+  );
 
-  .demo-btn{
-    display:none;
-  }
+  border:1px solid rgba(59,130,246,.20);
 
-  .navbar{
-    padding:0 5%;
-  }
+  border-radius:24px;
+
+  padding:30px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:14px;
+
+  box-shadow:
+    0 20px 60px rgba(37,99,235,.20);
+}
+
+.sales-modal h2{
+  color:white;
+  font-size:32px;
+  font-weight:800;
+  margin:0;
+}
+
+.sales-subtitle{
+  color:#94a3b8;
+  font-size:14px;
+  line-height:1.7;
+  margin-bottom:10px;
+}
+
+.sales-modal input,
+.sales-modal select,
+.sales-modal textarea{
+  width:100%;
+
+  background:#06101f;
+
+  color:white;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:14px;
+
+  padding:14px 16px;
+
+  font-size:14px;
+
+  outline:none;
+
+  transition:.3s;
+}
+
+.sales-modal input:focus,
+.sales-modal select:focus,
+.sales-modal textarea:focus{
+  border-color:#2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37,99,235,.10);
+}
+
+.sales-modal textarea{
+  min-height:110px;
+  resize:none;
+}
+
+.close-btn{
+  position:absolute;
+
+  top:18px;
+  right:18px;
+
+  width:40px;
+  height:40px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,.05);
+
+  color:white;
+
+  font-size:22px;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.close-btn:hover{
+  background:rgba(255,255,255,.10);
+
+  transform:rotate(90deg);
+}
+
+.submit-btn{
+  height:52px;
+
+  border:none;
+
+  border-radius:14px;
+
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+  color:white;
+
+  font-size:15px;
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.submit-btn:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 15px 35px rgba(37,99,235,.30);
 }
 
 /* =========================
-   MOBILE MENU
+   MOBILE MENU BUTTON
 ========================= */
 
 .mobile-menu-btn{
@@ -218,7 +375,6 @@ a{
   }
 
   .nav-links{
-
     position:absolute;
 
     top:80px;
@@ -243,16 +399,12 @@ a{
   }
 
   .nav-links.active{
-
     max-height:600px;
-
     padding:20px 0;
   }
 
   .nav-links li{
-
     width:100%;
-
     padding:18px 30px;
 
     border-bottom:
@@ -261,6 +413,15 @@ a{
 
   .nav-links li::after{
     display:none;
+  }
+
+  .sales-modal{
+    max-width:100%;
+    padding:24px;
+  }
+
+  .sales-modal h2{
+    font-size:26px;
   }
 
 }
@@ -281,6 +442,26 @@ a{
 
   .mobile-menu-btn{
     font-size:28px;
+  }
+
+  .sales-modal{
+    padding:20px;
+    border-radius:18px;
+  }
+
+  .sales-modal h2{
+    font-size:24px;
+  }
+
+  .sales-modal input,
+  .sales-modal select,
+  .sales-modal textarea{
+    font-size:13px;
+  }
+
+  .submit-btn{
+    height:48px;
+    font-size:14px;
   }
 
 }
