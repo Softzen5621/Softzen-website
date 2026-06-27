@@ -76,9 +76,19 @@ function Footer() {
             Enquiry@softzentechnology.com
           </a>
 
-          <a href="#contact">
-            Request Demo
-          </a>
+         <a
+  href="#contact"
+  onClick={(e) => {
+    e.preventDefault();
+    document
+      .getElementById("contact")
+      ?.scrollIntoView({
+        behavior: "smooth",
+      });
+  }}
+>
+  Request Demo
+</a>
 
           <a href="#contact">
             Product Consultation
