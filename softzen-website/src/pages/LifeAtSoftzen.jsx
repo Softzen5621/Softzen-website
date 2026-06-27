@@ -110,10 +110,6 @@ function LifeAtSoftzen() {
 
         <div className="culture-section reverse">
 
-          <div className="culture-right">
-            <img src={diversity} alt="diversity" />
-          </div>
-
           <div className="culture-left">
 
             <span className="section-label">
@@ -133,72 +129,77 @@ function LifeAtSoftzen() {
 
           </div>
 
+          <div className="culture-right">
+            <img src={diversity} alt="diversity" />
+          </div>
+
         </div>
-{/* GENDER EQUALITY */}
 
-<div className="culture-section">
+        {/* GENDER EQUALITY */}
 
-  <div className="culture-left">
+        <div className="culture-section">
 
-    <span className="section-label">
-      GENDER EQUALITY
-    </span>
+          <div className="culture-left">
 
-    <h2>
-      Equal Opportunities.
-      Equal Respect.
-      Equal Growth.
-    </h2>
+            <span className="section-label">
+              GENDER EQUALITY
+            </span>
 
-    <p>
-      At Softzen, we are committed to creating
-      an inclusive workplace where women, men
-      and transgender professionals are valued,
-      respected and empowered to thrive. We
-      believe diverse perspectives drive stronger
-      innovation, collaboration and leadership.
-    </p>
+            <h2>
+              Equal Opportunities.
+              Equal Respect.
+              Equal Growth.
+            </h2>
 
-  </div>
+            <p>
+              At Softzen, we are committed to creating
+              an inclusive workplace where women, men
+              and transgender professionals are valued,
+              respected and empowered to thrive. We
+              believe diverse perspectives drive stronger
+              innovation, collaboration and leadership.
+            </p>
 
-  <div className="culture-right">
-    <img src={identity} alt="gender equality" />
-  </div>
+          </div>
 
-</div>
+          <div className="culture-right">
+            <img src={identity} alt="gender equality" />
+          </div>
 
-{/* FOOD & DINING */}
+        </div>
 
-<div className="culture-section reverse">
+        {/* FOOD & DINING */}
 
-  <div className="culture-right">
-    <img src={food} alt="food and dining" />
-  </div>
+        <div className="culture-section reverse">
 
-  <div className="culture-left">
+          <div className="culture-left">
 
-    <span className="section-label">
-      FOOD & DINING
-    </span>
+            <span className="section-label">
+              FOOD & DINING
+            </span>
 
-    <h2>
-      Great Food.
-      Better Energy.
-      Stronger Teams.
-    </h2>
+            <h2>
+              Great Food.
+              Better Energy.
+              Stronger Teams.
+            </h2>
 
-    <p>
-      From healthy daily meals to diverse
-      international cuisines, we provide dining
-      experiences that support wellbeing,
-      productivity and collaboration. Good food
-      helps create a positive workplace where
-      people can perform at their best.
-    </p>
+            <p>
+              From healthy daily meals to diverse
+              international cuisines, we provide dining
+              experiences that support wellbeing,
+              productivity and collaboration. Good food
+              helps create a positive workplace where
+              people can perform at their best.
+            </p>
 
-  </div>
+          </div>
 
-</div>
+          <div className="culture-right">
+            <img src={food} alt="food and dining" />
+          </div>
+
+        </div>
 
         {/* PETS */}
 
@@ -250,38 +251,38 @@ function LifeAtSoftzen() {
 
         </div>
 
-{/* JOINING OFFER */}
+        {/* JOINING OFFER */}
 
-<div className="culture-section">
+        <div className="culture-section">
 
-  <div className="culture-left">
+          <div className="culture-left">
 
-    <span className="section-label">
-      YOUR SOFTZEN JOURNEY
-    </span>
+            <span className="section-label">
+              YOUR SOFTZEN JOURNEY
+            </span>
 
-    <h2>
-      Everything You Need.
-      Everything To Grow.
-      Everything To Succeed.
-    </h2>
+            <h2>
+              Everything You Need.
+              Everything To Grow.
+              Everything To Succeed.
+            </h2>
 
-    <p>
-      From day one, you'll receive access to
-      learning programs, career mentorship,
-      global opportunities, performance rewards,
-      wellness initiatives, family support and
-      professional development resources that
-      help you build a successful long-term career.
-    </p>
+            <p>
+              From day one, you'll receive access to
+              learning programs, career mentorship,
+              global opportunities, performance rewards,
+              wellness initiatives, family support and
+              professional development resources that
+              help you build a successful long-term career.
+            </p>
 
-  </div>
+          </div>
 
-  <div className="culture-right">
-    <img src={joiningoffer} alt="joining offer" />
-  </div>
+          <div className="culture-right">
+            <img src={joiningoffer} alt="joining offer" />
+          </div>
 
-</div>
+        </div>
 
         {/* WELLNESS HIGHLIGHT */}
 
