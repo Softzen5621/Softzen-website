@@ -101,7 +101,7 @@ const products = [
 
 return ( <section id="products" className="ecosystem">
 
-```
+
   <div className="section-header">
 
     <p>SOFTZEN ECOSYSTEM</p>
